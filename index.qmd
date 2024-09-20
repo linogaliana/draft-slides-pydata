@@ -27,6 +27,7 @@ format:
     #output-file: slides.html
 from: markdown+emoji
 bibliography: reference.bib
+suppress-bibliography: true
 ---
 
 
@@ -110,16 +111,18 @@ in a standardized environment via a web service:
 
 ## Demo 🚀 {.smaller}
 
+
 :::: {.columns}
 
 ::: {.column width="50%"}
-[![](pandaqr2.png)](https://pythonds.linogaliana.fr/content/manipulation/02_pandas_intro.html)
+[![](pandaqr2.png){width=100%}](https://pythonds.linogaliana.fr/content/manipulation/02_pandas_intro.html)
+
 
 _Par le biais direct du site [pythonds.linogaliana.fr/](https://pythonds.linogaliana.fr/content/manipulation/02_pandas_intro.html)_
 :::
 
 ::: {.column width="50%"}
-[![](onyxia-qrcode3.png)](https://www.sspcloud.fr/formation)
+[![](onyxia-qrcode4.png){width=100%}](https://www.sspcloud.fr/formation)
 
 _Par le biais du portail de formation du [www.sspcloud.fr/formation/](https://www.sspcloud.fr/formation)_
 
