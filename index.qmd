@@ -1,7 +1,7 @@
 ---
-title: Python pour la data science
+title: draft pydata
 subtitle: |
-  **[Un cours complet pour découvrir le langage {{< fa brands python >}}]{.orange}**
+  **[Un exemple d'utilisation avec un cours de `Python`]{.orange}**
 author:   
   - name: "[Lino Galiana](https://www.linogaliana.fr/)"
     affiliations:
@@ -26,141 +26,106 @@ format:
   #onyxia-dark-revealjs:
     #output-file: slides.html
 from: markdown+emoji
+bibliography: reference.bib
 ---
 
-## Présentation {.smaller}
 
-* [_Data-scientist_ à l'`Insee`](https://www.linogaliana.fr/)
+## Context
 
-* Coordinateur d'un réseau des _data-scientists_ dans l'administration:
-    + Site web: [https://ssphub.netlify.app/](https://ssphub.netlify.app/) ;
+* Website [pythonds.linogaliana.fr/](https://pythonds.linogaliana.fr/) is a good place to start, but...
 
 . . .
 
-* Expérience traitement _big-data_ et `NLP`:
-    + Cours _opinionated_ ;
-    + Des conseils et des recommandations issues de l'expérience
+* ... [**Notebooks more practical for learning**]{.orange} {{< fa brands python >}}
+    + Code execution, text cells, etc.
+    + Students need a sandbox area to discover ✏️
+
+. . .
+
+* Notebooks supported by user-friendly environment: `VSCode` and `Jupyter`
+    + See @barba2019teaching for more elements on the benefits of using _notebooks_ for education
+
+## Context {.smaller}
+
+- Classic obstacles encountered in practical courses : 
+    + Students: waste time installing environments rather than practicing 😵‍💫.
+    + Teachers: complicated to manage as many installations as students 🤔
+
+. . .
+
+- Desktop installations in educational institutions create as many problems as they solve:
+    + Windows computers,
+    + Limited rights to install _packages_,
+    + _Proxy_...
 
 
-:::{.callout-note}
 
-* {{< fa envelope >}} [Envoyez-moi un mail](mailto: lino.galiana@insee.fr) :
-    + pour suivre l'actualité du réseau des _data-scientists_ ;
-    + si vous êtes intéressés par travailler dans l'administration ;
+
+::: {.callout-tip}
+## Solution
+
+Making _notebooks_ available
+in a standardized environment via a web service:
+
+
++ `Colab` ? ❌
++ `SSPCloud` ✅
 
 :::
 
-## Objectifs du cours {.smaller}
+## Why not turning ourselves to `Colab`?
 
-* Pouvoir utiliser `Python` {{< fa brands python >}} pour l'[**ensemble du processus de valorisation**]{.orange} des données :
-    + Récupérer et structurer des données ;
-    + Manipuler ;
-    + Visualiser ;
-    + Modéliser.
+- Handy if you don't have an environment, but...
 
-. . .
-
-* Comprendre comment `Python` {{< fa brands python >}} sert dans une [**démarche de recherche ou de production**]{.orange} ;
-
-. . .
-
-* S'initier à la question de la [**reproductibilité** {{< fa brands git-alt >}}]{.orange} (*open-source*, *open-data*...) ;
+::: {.incremental}
+1. Commercial product:
+    * 💸 Premium features for a fee (GPU)
+    * Accustoms students to integrated services such as `Drive`.
+2. Limited freedom:
+    * No direct access to a command line
+    * No storage service adapted to data (`Drive` vs modern cloud technology)...
+:::
 
 . . .
 
-* Découvrir la [__pratique moderne__]{.orange} de `Python` {{< fa brands python >}} dans le monde de la _data-science_ ;
+## What about SSPCloud ? {.smaller}
 
-. . .
-
-* Découvrir qu'on peut [__faire des choses sympa__]{.orange} :sparkles: avec `Python` {{< fa brands python >}}. 
-
-
-## Organisation du cours
-
-<br><br>
-
-* Cours dure [__21h__]{.orange} avec des __séances de 3h__ ;
-
-. . .
-
-* [__Apprentissage__]{.orange} par la pratique à partir de TP ;
-
-. . .
-
-
-* Validation avec un [__projet de fin de semestre__]{.orange}
-    + Plus de détails dans quelques instants
-
-. . .
-
-
-## Contenu mis à disposition {.smaller}
-
-<style type="text/css">body{margin:0}a{text-decoration:none;outline:0}.widget{display:inline-block;overflow:hidden;font-family:-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif;font-size:0;line-height:0;white-space:nowrap}.btn,.social-count{position:relative;display:inline-block;display:inline-flex;height:14px;padding:2px 5px;font-size:11px;font-weight:600;line-height:14px;vertical-align:bottom;cursor:pointer;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none;background-repeat:repeat-x;background-position:-1px -1px;background-size:110% 110%;border:1px solid}.btn{border-radius:.25em}.btn:not(:last-child){border-radius:.25em 0 0 .25em}.social-count{border-left:0;border-radius:0 .25em .25em 0}.widget-lg .btn,.widget-lg .social-count{height:16px;padding:5px 10px;font-size:12px;line-height:16px}.octicon{display:inline-block;vertical-align:text-top;fill:currentColor;overflow:visible}.btn:focus-visible,.social-count:focus-visible{outline:2px solid #0969da;outline-offset:-2px}.btn{color:#24292f;background-color:#ebf0f4;border-color:#ccd1d5;border-color:rgba(27,31,36,.15);background-image:url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg'%3e%3clinearGradient id='o' x2='0' y2='1'%3e%3cstop stop-color='%23f6f8fa'/%3e%3cstop offset='90%25' stop-color='%23ebf0f4'/%3e%3c/linearGradient%3e%3crect width='100%25' height='100%25' fill='url(%23o)'/%3e%3c/svg%3e");background-image:-moz-linear-gradient(top, #f6f8fa, #ebf0f4 90%);background-image:linear-gradient(180deg, #f6f8fa, #ebf0f4 90%);filter:progid:DXImageTransform.Microsoft.Gradient(startColorstr='#FFF6F8FA', endColorstr='#FFEAEFF3')}:root .btn{filter:none}.btn:hover,.btn:focus{background-color:#e9ebef;background-position:0 -0.5em;border-color:#caccd1;border-color:rgba(27,31,36,.15);background-image:url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg'%3e%3clinearGradient id='o' x2='0' y2='1'%3e%3cstop stop-color='%23f3f4f6'/%3e%3cstop offset='90%25' stop-color='%23e9ebef'/%3e%3c/linearGradient%3e%3crect width='100%25' height='100%25' fill='url(%23o)'/%3e%3c/svg%3e");background-image:-moz-linear-gradient(top, #f3f4f6, #e9ebef 90%);background-image:linear-gradient(180deg, #f3f4f6, #e9ebef 90%);filter:progid:DXImageTransform.Microsoft.Gradient(startColorstr='#FFF3F4F6', endColorstr='#FFE8EAEE')}:root .btn:hover,:root .btn:focus{filter:none}.btn:active{background-color:#e5e9ed;border-color:#c7cbcf;border-color:rgba(27,31,36,.15);box-shadow:inset 0 .15em .3em rgba(27,31,36,.15);background-image:none;filter:none}.social-count{color:#24292f;background-color:#fff;border-color:#ddddde;border-color:rgba(27,31,36,.15)}.social-count:hover,.social-count:focus{color:#0969da}.octicon-heart{color:#bf3989}</style>
-
-* __Points d'entrée principaux__ :
-    + Site web {{< fa brands firefox >}}: <https://pythonds.linogaliana.fr/> ;
-    + Dépôt `Github` {{< fa brands github >}} : <https://github.com/linogaliana/python-datascientist> <div class="widget widget-lg"><a class="btn" href="https://github.com/linogaliana/python-datascientist" rel="noopener" target="_blank" aria-label="Star this website on Github"><svg viewBox="0 0 16 16" width="16" height="16" class="octicon octicon-star" aria-hidden="true"><path fill-rule="evenodd" d="M8 .25a.75.75 0 01.673.418l1.882 3.815 4.21.612a.75.75 0 01.416 1.279l-3.046 2.97.719 4.192a.75.75 0 01-1.088.791L8 12.347l-3.766 1.98a.75.75 0 01-1.088-.79l.72-4.194L.818 6.374a.75.75 0 01.416-1.28l4.21-.611L7.327.668A.75.75 0 018 .25zm0 2.445L6.615 5.5a.75.75 0 01-.564.41l-3.097.45 2.24 2.184a.75.75 0 01.216.664l-.528 3.084 2.769-1.456a.75.75 0 01.698 0l2.77 1.456-.53-3.084a.75.75 0 01.216-.664l2.24-2.183-3.096-.45a.75.75 0 01-.564-.41L8 2.694v.001z"></path></svg>&nbsp;<span>Star this website on Github</span></a><a class="social-count" href="https://github.com/linogaliana/python-datascientist/stargazers" rel="noopener" target="_blank" aria-label="102 stargazers on GitHub">102</a></div>
-
-. . .
-
-* Des __tutoriels et exercices sous format `Jupyter Notebook`__ : 
-    + Possibilité de les tester sur des environnements temporaires d'exécution
-
+* 🚀 Both `Colab` and `SSPCloud` offer immediate startup
+  + Runtime environment {{< fa brands python >}} accessible from clickable link 
 <a href="https://datalab.sspcloud.fr/launcher/ide/vscode-python?autoLaunch=true&amp;onyxia.friendlyName=%C2%AB02_pandas_intro%C2%BB&amp;init.personalInit=%C2%ABhttps%3A%2F%2Fraw.githubusercontent.com%2Flinogaliana%2Fpython-datascientist%2Fmaster%2Fsspcloud%2Finit-vscode.sh%C2%BB&amp;init.personalInitArgs=%C2%ABmanipulation%2002_pandas_intro%C2%BB&amp;security.allowlist.enabled=false" target="_blank" rel="noopener" data-original-href="https://datalab.sspcloud.fr/launcher/ide/vscode-python?autoLaunch=true&amp;onyxia.friendlyName=%C2%AB02_pandas_intro%C2%BB&amp;init.personalInit=%C2%ABhttps%3A%2F%2Fraw.githubusercontent.com%2Flinogaliana%2Fpython-datascientist%2Fmaster%2Fsspcloud%2Finit-vscode.sh%C2%BB&amp;init.personalInitArgs=%C2%ABmanipulation%2002_pandas_intro%C2%BB&amp;security.allowlist.enabled=false"><img src="https://img.shields.io/badge/SSP%20Cloud-Tester_avec_VSCode-blue?logo=visualstudiocode&amp;logoColor=blue" alt="Onyxia"></a>
 <a href="https://datalab.sspcloud.fr/launcher/ide/jupyter-python?autoLaunch=true&amp;onyxia.friendlyName=%C2%AB02_pandas_intro%C2%BB&amp;init.personalInit=%C2%ABhttps%3A%2F%2Fraw.githubusercontent.com%2Flinogaliana%2Fpython-datascientist%2Fmaster%2Fsspcloud%2Finit-jupyter.sh%C2%BB&amp;init.personalInitArgs=%C2%ABmanipulation%2002_pandas_intro%C2%BB&amp;security.allowlist.enabled=false" target="_blank" rel="noopener" data-original-href="https://datalab.sspcloud.fr/launcher/ide/jupyter-python?autoLaunch=true&amp;onyxia.friendlyName=%C2%AB02_pandas_intro%C2%BB&amp;init.personalInit=%C2%ABhttps%3A%2F%2Fraw.githubusercontent.com%2Flinogaliana%2Fpython-datascientist%2Fmaster%2Fsspcloud%2Finit-jupyter.sh%C2%BB&amp;init.personalInitArgs=%C2%ABmanipulation%2002_pandas_intro%C2%BB&amp;security.allowlist.enabled=false"><img src="https://img.shields.io/badge/SSP%20Cloud-Tester_avec_Jupyter-orange?logo=Jupyter&amp;logoColor=orange" alt="Onyxia"></a>
-
-:::{.callout-warning}
-
-## Recommandation
-
-Privilégier `VSCode` sur le [`SSPCloud` https://datalab.sspcloud.fr](https://datalab.sspcloud.fr/home) (pas de _debug_ garanti sur d'autres environnements)
-
-<a href="https://datalab.sspcloud.fr/launcher/ide/vscode-python?autoLaunch=true&amp;onyxia.friendlyName=%C2%AB02_pandas_intro%C2%BB&amp;init.personalInit=%C2%ABhttps%3A%2F%2Fraw.githubusercontent.com%2Flinogaliana%2Fpython-datascientist%2Fmaster%2Fsspcloud%2Finit-vscode.sh%C2%BB&amp;init.personalInitArgs=%C2%ABmanipulation%2002_pandas_intro%C2%BB&amp;security.allowlist.enabled=false" target="_blank" rel="noopener" data-original-href="https://datalab.sspcloud.fr/launcher/ide/vscode-python?autoLaunch=true&amp;onyxia.friendlyName=%C2%AB02_pandas_intro%C2%BB&amp;init.personalInit=%C2%ABhttps%3A%2F%2Fraw.githubusercontent.com%2Flinogaliana%2Fpython-datascientist%2Fmaster%2Fsspcloud%2Finit-vscode.sh%C2%BB&amp;init.personalInitArgs=%C2%ABmanipulation%2002_pandas_intro%C2%BB&amp;security.allowlist.enabled=false"><img src="https://img.shields.io/badge/SSP%20Cloud-Tester_avec_VSCode-blue?logo=visualstudiocode&amp;logoColor=blue" alt="Onyxia"></a>
-
-:::
-
-## Examen {.smaller}
-
-* Projet collaboratif s'appuyant sur `Python` {{< fa brands python >}}
-répondant à une [__démarche scientifique et ouverte__]{.orange}:
-    + Projet __disponible sur `Github`__ {{< fa brands github >}}
-    + Le projet doit être __documenté__ 
+<a href="https://colab.research.google.com/github/linogaliana/python-datascientist-notebooks/blob/main//notebooks/manipulation/02_pandas_intro.ipynb" target="_blank" rel="noopener" data-original-href="https://colab.research.google.com/github/linogaliana/python-datascientist-notebooks/blob/main//notebooks/manipulation/02_pandas_intro.ipynb"><img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"></a>
 
 . . .
 
-* [__Sujet libre__]{.orange} :
-    + Discutez avec votre chargé de TD pour avoir un avis ;
+- Wide range of opensource technologies to go further
+  - `S3` storage, `MLFlow`, `PostgreSQL`, `Argo workflow`, etc.
+  - Students can discover them during the rest of their data science course.
 
 . . .
 
-:::{.callout-important}
+- Philosophy :
+  - Students discover IT principles with a well configured environment ;
+  - But are not locked into a particular software they would need to purchase afterwards
 
-* Exigence de [__reproductibilité__]{.orange}
-    + Projet utilisant des __sources *open-data*__ ou scrappant des sites publics ; 
-    + Code doit pouvoir être __répliqué__ par chargé TD ;
-    + [__Pas un projet Kaggle !__]{.orange}
+## Demo 🚀 {.smaller}
+
+:::: {.columns}
+
+::: {.column width="50%"}
+[![](pandaqr2.png)](https://pythonds.linogaliana.fr/content/manipulation/02_pandas_intro.html)
+
+_Par le biais direct du site [pythonds.linogaliana.fr/](https://pythonds.linogaliana.fr/content/manipulation/02_pandas_intro.html)_
+:::
+
+::: {.column width="50%"}
+[![](onyxiaqr2.png)](https://www.sspcloud.fr/formation)
+
+_Par le biais du portail de formation du [www.sspcloud.fr/formation/](https://www.sspcloud.fr/formation)_
 
 :::
 
+::::
 
 
-## Examen {.smaller}
 
-* __Approfondir__ des aspects du cours: 
-    + [__Trois dimensions__]{.orange} doivent être présentes dans le projet: manipuler, visualiser ou modéliser ;
-    + Plus ou moins loin selon les projets.
-
-. . .
-
-* [__Exemples__]{.orange} de sujets passés :
-    + Suggestions de trajets pour cyclistes ;
-    + Création d'un système de réponse automatique aux tweets mentionnant la RATP ;
-    + Visualiser les performances des athlètes sur des courses niveau amateur ou professionel ;
-    + Comparer la performance de modèles de gestion de portefeuille ;
-
-:::{.callout-important}
-
-**Deadline en décembre 2024**, date précisée ultérieurement
-
-:::
