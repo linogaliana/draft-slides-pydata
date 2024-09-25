@@ -30,8 +30,28 @@ bibliography: reference.bib
 suppress-bibliography: true
 ---
 
+## As data scientist
 
-## Context
+<h3>I needed a good playground</h3>
+
+- __[To experiment]{.orange}__, data scientists need sandboxes and freedom
+
+. . .
+
+- To simplify the [__transition from experimentation to production__]{.orange}, data scientists need adapted tools
+
+. . .
+
+- Many IT infrastructures are not adapted to data science
+
+. . .
+
+- Having a __[reliable datalab]{.orange}__ has fostered the adoption of data science innovations
+
+
+## When I started to teach data science
+
+<h3>Well, I needed the same</h3>
 
 * Website [pythonds.linogaliana.fr/](https://pythonds.linogaliana.fr/) is a good place to start, but...
 
@@ -43,23 +63,19 @@ suppress-bibliography: true
 
 . . .
 
-* Notebooks supported by user-friendly environment: `VSCode` and `Jupyter`
-    + See @barba2019teaching for more elements on the benefits of using _notebooks_ for education
+* Notebooks supported by user-friendly environments: `VSCode` and `Jupyter`
 
-## Context {.smaller}
 
-- Classic obstacles encountered in practical courses : 
-    + Students: waste time installing environments rather than practicing 😵‍💫.
-    + Teachers: complicated to manage as many installations as students 🤔
+## Barriers to learning {.smaller}
+
+- Usual obstacles encountered in practical courses : 
+    + _Students_: __[waste time]{.orange}__ installing environments rather than practicing 😵‍💫.
+    + _Teachers_: hard to manage as many installations as students 🤔
 
 . . .
 
 - Desktop installations in educational institutions create as many problems as they solve:
-    + Windows computers,
-    + Limited rights to install _packages_,
-    + _Proxy_...
-
-
+    + Windows computers, limited rights to install packages, _proxy_...
 
 
 ::: {.callout-tip}
@@ -79,10 +95,10 @@ in a standardized environment via a web service:
 - Handy if you don't have an environment, but...
 
 ::: {.incremental}
-1. Commercial product:
+1. [__Commercial product__]{.orange}:
     * 💸 Premium features for a fee (GPU)
     * Accustoms students to integrated services such as `Drive`.
-2. Limited freedom:
+2. [__Limited freedom__]{.orange}:
     * No direct access to a command line
     * No storage service adapted to data (`Drive` vs modern cloud technology)...
 :::
@@ -99,15 +115,15 @@ in a standardized environment via a web service:
 
 . . .
 
-- Wide range of opensource technologies to go further
+- 😍 __[Wide range of opensource technologies]{.orange}__ to go further
   - `S3` storage, `MLFlow`, `PostgreSQL`, `Argo workflow`, etc.
   - Students can discover them during the rest of their data science course.
 
 . . .
 
-- Philosophy :
-  - Students discover IT principles with a well configured environment ;
-  - But are not locked into a particular software they would need to purchase afterwards
+- 💡 Philosophy :
+  - Students discover IT principles with a __[well configured environment]{.orange}__ ;
+  - But are __[not locked into a particular software]{.orange}__ they would need to purchase afterwards.
 
 ## Demo 🚀 {.smaller}
 
