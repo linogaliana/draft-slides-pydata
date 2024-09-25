@@ -7,18 +7,25 @@
     "text": "Ce document et les fichiers qui le constituent sont mis à disposition sous licence\nCreative Commons Attribution Pas d’Utilisation Commerciale Partage à l’Identique 4.0\nInternational :\nhttps://creativecommons.org/licenses/by-nc-sa/4.0/\n\n\n\nCitationBibTeX citation:@book{galiana2023,\n  author = {Galiana, Lino},\n  title = {Python Pour La Data Science},\n  date = {2023},\n  url = {https://pythonds.linogaliana.fr/},\n  doi = {10.5281/zenodo.8229676},\n  langid = {en}\n}\nFor attribution, please cite this work as:\nGaliana, Lino. 2023. Python Pour La Data Science. https://doi.org/10.5281/zenodo.8229676."
   },
   {
-    "objectID": "index.html#context",
-    "href": "index.html#context",
+    "objectID": "index.html#as-data-scientist",
+    "href": "index.html#as-data-scientist",
     "title": "draft pydata",
-    "section": "Context",
-    "text": "Context\n\nWebsite pythonds.linogaliana.fr/ is a good place to start, but…\n\n\n\n… Notebooks more practical for learning \n\nCode execution, text cells, etc.\nStudents need a sandbox area to discover ✏️\n\n\n\n\n\nNotebooks supported by user-friendly environment: VSCode and Jupyter\n\nSee Barba et al. (2019) for more elements on the benefits of using notebooks for education"
+    "section": "As data scientist",
+    "text": "As data scientist\n\nI needed a good playground\n\n\nTo experiment, data scientists need sandboxes and freedom\n\n\n\nTo simplify the transition from experimentation to production, data scientists need adapted tools\n\n\n\n\nMany IT infrastructures are not adapted to data science\n\n\n\n\nHaving a reliable datalab has fostered the adoption of data science innovations"
   },
   {
-    "objectID": "index.html#context-1",
-    "href": "index.html#context-1",
+    "objectID": "index.html#when-i-started-to-teach-data-science",
+    "href": "index.html#when-i-started-to-teach-data-science",
     "title": "draft pydata",
-    "section": "Context",
-    "text": "Context\n\nClassic obstacles encountered in practical courses :\n\nStudents: waste time installing environments rather than practicing 😵‍💫.\nTeachers: complicated to manage as many installations as students 🤔\n\n\n\n\nDesktop installations in educational institutions create as many problems as they solve:\n\nWindows computers,\nLimited rights to install packages,\nProxy…\n\n\n\n\n\n\n\n\nSolution\n\n\nMaking notebooks available\nin a standardized environment via a web service:\n\nColab ? ❌\nSSPCloud ✅"
+    "section": "When I started to teach data science",
+    "text": "When I started to teach data science\n\nWell, I needed the same\n\n\nWebsite pythonds.linogaliana.fr/ is a good place to start, but…\n\n\n\n… Notebooks more practical for learning \n\nCode execution, text cells, etc.\nStudents need a sandbox area to discover ✏️\n\n\n\n\n\nNotebooks supported by user-friendly environments: VSCode and Jupyter"
+  },
+  {
+    "objectID": "index.html#barriers-to-learning",
+    "href": "index.html#barriers-to-learning",
+    "title": "draft pydata",
+    "section": "Barriers to learning",
+    "text": "Barriers to learning\n\nUsual obstacles encountered in practical courses :\n\nStudents: waste time installing environments rather than practicing 😵‍💫.\nTeachers: hard to manage as many installations as students 🤔\n\n\n\n\nDesktop installations in educational institutions create as many problems as they solve:\n\nWindows computers, limited rights to install packages, proxy…\n\n\n\n\n\n\n\n\nSolution\n\n\nMaking notebooks available\nin a standardized environment via a web service:\n\nColab ? ❌\nSSPCloud ✅"
   },
   {
     "objectID": "index.html#why-not-turning-ourselves-to-colab",
@@ -32,7 +39,7 @@
     "href": "index.html#what-about-sspcloud",
     "title": "draft pydata",
     "section": "What about SSPCloud ?",
-    "text": "What about SSPCloud ?\n\n🚀 Both Colab and SSPCloud offer immediate startup\n\nRuntime environment  accessible from clickable link\n\n\n\n\n\n\n\nWide range of opensource technologies to go further\n\nS3 storage, MLFlow, PostgreSQL, Argo workflow, etc.\nStudents can discover them during the rest of their data science course.\n\n\n\n\n\nPhilosophy :\n\nStudents discover IT principles with a well configured environment ;\nBut are not locked into a particular software they would need to purchase afterwards"
+    "text": "What about SSPCloud ?\n\n🚀 Both Colab and SSPCloud offer immediate startup\n\nRuntime environment  accessible from clickable link\n\n\n\n\n\n\n\n😍 Wide range of opensource technologies to go further\n\nS3 storage, MLFlow, PostgreSQL, Argo workflow, etc.\nStudents can discover them during the rest of their data science course.\n\n\n\n\n\n💡 Philosophy :\n\nStudents discover IT principles with a well configured environment ;\nBut are not locked into a particular software they would need to purchase afterwards."
   },
   {
     "objectID": "index.html#demo",
