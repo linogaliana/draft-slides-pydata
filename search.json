@@ -9,43 +9,43 @@
   {
     "objectID": "index.html#as-data-scientist",
     "href": "index.html#as-data-scientist",
-    "title": "draft pydata",
+    "title": "Onyxia",
     "section": "As data scientist",
     "text": "As data scientist\n\nI needed a good playground\n\n\nTo experiment, data scientists need sandboxes and freedom\n\n\n\nTo simplify the transition from experimentation to production, data scientists need adapted tools\n\n\n\n\nMany IT infrastructures are not adapted to data science\n\n\n\n\nHaving a reliable datalab has fostered the adoption of data science innovations"
   },
   {
     "objectID": "index.html#when-i-started-to-teach-data-science",
     "href": "index.html#when-i-started-to-teach-data-science",
-    "title": "draft pydata",
+    "title": "Onyxia",
     "section": "When I started to teach data science",
     "text": "When I started to teach data science\n\nWell, I needed the same\n\n\nWebsite pythonds.linogaliana.fr/ is a good place to start, but…\n\n\n\n… Notebooks more practical for learning \n\nCode execution, text cells, etc.\nStudents need a sandbox area to discover ✏️\n\n\n\n\n\nNotebooks supported by user-friendly environments: VSCode and Jupyter"
   },
   {
     "objectID": "index.html#barriers-to-learning",
     "href": "index.html#barriers-to-learning",
-    "title": "draft pydata",
+    "title": "Onyxia",
     "section": "Barriers to learning",
     "text": "Barriers to learning\n\nUsual obstacles encountered in practical courses :\n\nStudents: waste time installing environments rather than practicing 😵‍💫.\nTeachers: hard to manage as many installations as students 🤔\n\n\n\n\nDesktop installations in educational institutions create as many problems as they solve:\n\nWindows computers, limited rights to install packages, proxy…\n\n\n\n\n\n\n\n\nSolution\n\n\nMaking notebooks available\nin a standardized environment via a web service:\n\nColab ? ❌\nSSPCloud ✅"
   },
   {
     "objectID": "index.html#why-not-turning-ourselves-to-colab",
     "href": "index.html#why-not-turning-ourselves-to-colab",
-    "title": "draft pydata",
+    "title": "Onyxia",
     "section": "Why not turning ourselves to Colab?",
     "text": "Why not turning ourselves to Colab?\n\nHandy if you don’t have an environment, but…\n\n\n\nCommercial product:\n\n💸 Premium features for a fee (GPU)\nAccustoms students to integrated services such as Drive.\n\nLimited freedom:\n\nNo direct access to a command line\nNo storage service adapted to data (Drive vs modern cloud technology)…"
   },
   {
     "objectID": "index.html#what-about-sspcloud",
     "href": "index.html#what-about-sspcloud",
-    "title": "draft pydata",
+    "title": "Onyxia",
     "section": "What about SSPCloud ?",
     "text": "What about SSPCloud ?\n\n🚀 Both Colab and SSPCloud offer immediate startup\n\nRuntime environment  accessible from clickable link\n\n\n\n\n\n\n\n😍 Wide range of opensource technologies to go further\n\nS3 storage, MLFlow, PostgreSQL, Argo workflow, etc.\nStudents can discover them during the rest of their data science course.\n\n\n\n\n\n💡 Philosophy :\n\nStudents discover IT principles with a well configured environment ;\nBut are not locked into a particular software they would need to purchase afterwards."
   },
   {
     "objectID": "index.html#demo",
     "href": "index.html#demo",
-    "title": "draft pydata",
+    "title": "Onyxia",
     "section": "Demo 🚀",
-    "text": "Demo 🚀\n\n\n\nPar le biais direct du site pythonds.linogaliana.fr/\n\n\nPar le biais du portail de formation du www.sspcloud.fr/formation/\n\n\n\n\nPython pour la data science, ENSAE (Retour sur pythonds.linogaliana.fr)"
+    "text": "Demo 🚀\n\n\n\nPar le biais direct du site pythonds.linogaliana.fr/\n\n\nPar le biais du portail de formation du www.sspcloud.fr/formation/\n\n\n\n\nParis Pydata 2024"
   }
 ]

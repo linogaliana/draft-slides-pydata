@@ -1,6 +1,5 @@
 <!DOCTYPE html>
-<html lang="fr-FR"><head>
-<script src="site_libs/tone/tone.js"></script>
+<html lang="en"><head>
 <script src="site_libs/clipboard/clipboard.min.js"></script>
 <script src="site_libs/quarto-html/tabby.min.js"></script>
 <script src="site_libs/quarto-html/popper.min.js"></script>
@@ -14,7 +13,7 @@
   <meta name="generator" content="quarto-1.5.57">
 
   <meta name="author" content="Lino Galiana">
-  <title>draft pydata</title>
+  <title>Onyxia</title>
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
@@ -333,7 +332,7 @@
 <meta name="citation_online_date" content="2024-09-24">
 <meta name="citation_fulltext_html_url" content="https://pythonds.linogaliana.fr/">
 <meta name="citation_doi" content="10.5281/zenodo.8229676">
-<meta name="citation_language" content="fr-FR">
+<meta name="citation_language" content="en">
 <meta name="citation_reference" content="citation_title=Teaching and learning with jupyter;,citation_author=Lorena A Barba;,citation_author=Lecia J Barker;,citation_author=Douglas S Blank;,citation_author=Jed Brown;,citation_author=Allen B Downey;,citation_author=Timothy George;,citation_author=Lindsey J Heagy;,citation_author=Kyle T Mandli;,citation_author=Jason K Moore;,citation_author=David Lippert;,citation_author=others;,citation_publication_date=2019;,citation_cover_date=2019;,citation_year=2019;,citation_journal_title=https://jupyter4edu. github.io/jupyter-edu-book;">
 <meta name="citation_reference" content="citation_title=Coding for economists;,citation_author=undefined Turrell;,citation_author=undefined contributors;,citation_publication_date=2021;,citation_cover_date=2021;,citation_year=2021;,citation_fulltext_html_url=https://aeturrell.github.io/coding-for-economists;">
 <meta name="citation_reference" content="citation_title=R for data science;,citation_author=Hadley Wickham;,citation_author=Mine Çetinkaya-Rundel;,citation_author=Garrett Grolemund;,citation_publication_date=2023;,citation_cover_date=2023;,citation_year=2023;">
@@ -369,8 +368,8 @@
     <div class="slides">
 
 <section id="title-slide" data-background-image="site_libs/quarto-contrib/quarto-project/InseeFrLab/onyxia/background.svg" data-background-size="contain" class="quarto-title-block center">
-  <h1 class="title">draft pydata</h1>
-  <p class="subtitle"></p><p><strong><span class="orange">Un exemple d’utilisation avec un cours de <code>Python</code></span></strong></p><p></p>
+  <h1 class="title"><p><strong><span class="orange">Onyxia</span></strong></p></h1>
+  <p class="subtitle"><strong>Experience feedback from an enthusiastic user</strong></p>
 
 <div class="quarto-title-authors">
 <div class="quarto-title-author">
@@ -383,7 +382,7 @@
     </div>
 </div>
 
-  <p class="date">24/09/2024</p>
+  <p class="date">9/24/24</p>
 </section>
 <section id="as-data-scientist" class="slide level2" data-background-image="background.svg" data-background-size="contain">
 <h2>As data scientist</h2>
@@ -438,7 +437,7 @@ Well, I needed the same
 <li>Usual obstacles encountered in practical courses :
 <ul>
 <li><em>Students</em>: <strong><span class="orange">waste time</span></strong> installing environments rather than practicing 😵‍💫.</li>
-<li><em>Teachers</em>: hard to manage as many installations as students 🤔</li>
+<li><em>Teachers</em>: <strong><span class="orange">hard to manage</span></strong> as many installations as students 🤔</li>
 </ul></li>
 </ul>
 <div class="fragment">
@@ -458,7 +457,7 @@ Well, I needed the same
 </div>
 <div class="callout-content">
 <p>Making <em>notebooks</em> available
-in a standardized environment via a web service:</p>
+in a <span class="orange"><strong>standardized environment</strong></span> via a web service:</p>
 <ul>
 <li><code>Colab</code> ? ❌</li>
 <li><code>SSPCloud</code> ✅</li>
@@ -531,7 +530,7 @@ in a standardized environment via a web service:</p>
 
 <div class="quarto-auto-generated-content">
 <div class="footer footer-default">
-<p><strong><em>Python pour la data science</em>, ENSAE (Retour sur <a href="https://pythonds.linogaliana.fr/">pythonds.linogaliana.fr</a>)</strong></p>
+<p>Paris Pydata 2024</p>
 </div>
 </div>
 </section>
@@ -545,7 +544,6 @@ in a standardized environment via a web service:</p>
   <script src="site_libs/revealjs/plugin/pdf-export/pdfexport.js"></script>
   <script src="site_libs/revealjs/plugin/reveal-menu/menu.js"></script>
   <script src="site_libs/revealjs/plugin/reveal-menu/quarto-menu.js"></script>
-  <script src="site_libs/revealjs/plugin/quarto-tone/tone.js"></script>
   <script src="site_libs/revealjs/plugin/quarto-support/support.js"></script>
   
 
@@ -737,7 +735,7 @@ in a standardized environment via a web service:</p>
         },
 
         // reveal.js plugins
-        plugins: [QuartoLineHighlight, PdfExport, RevealMenu, QuartoTone, QuartoSupport,
+        plugins: [QuartoLineHighlight, PdfExport, RevealMenu, QuartoSupport,
 
           RevealMath,
           RevealNotes,
@@ -786,12 +784,12 @@ in a standardized environment via a web service:</p>
         // flash "checked"
         button.classList.add('code-copy-button-checked');
         var currentTitle = button.getAttribute("title");
-        button.setAttribute("title", "Copié");
+        button.setAttribute("title", "Copied!");
         let tooltip;
         if (window.bootstrap) {
           button.setAttribute("data-bs-toggle", "tooltip");
           button.setAttribute("data-bs-placement", "left");
-          button.setAttribute("data-bs-title", "Copié");
+          button.setAttribute("data-bs-title", "Copied!");
           tooltip = new bootstrap.Tooltip(button, 
             { trigger: "manual", 
               customClass: "code-copy-button-tooltip",
