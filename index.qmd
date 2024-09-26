@@ -1,7 +1,8 @@
 ---
-title: draft pydata
-subtitle: |
-  **[Un exemple d'utilisation avec un cours de `Python`]{.orange}**
+title: |
+  **[Onyxia]{.orange}**
+subtitle: __Experience feedback from an enthusiastic user__
+footer: Paris Pydata 2024
 author:   
   - name: "[Lino Galiana](https://www.linogaliana.fr/)"
     affiliations:
@@ -9,22 +10,9 @@ author:
 date: 2024-09-24
 date-format: short
 slide-number: true
-footer: |
-  **_Python pour la data science_, ENSAE (Retour sur [pythonds.linogaliana.fr](https://pythonds.linogaliana.fr/))**
-# uncomment for French presentations:
-lang: fr-FR
-# for blind readers:
-slide-tone: true
-# for @olevitt:
-#chalkboard: # press the B key to toggle chalkboard
-#  theme: whiteboard
-# uncomment to use the multiplex mode:
-#multiplex: true
+slide-tone: false
 format:
-  # pick the light mode (onyxia-revealjs) or the dark mode (onyxia-dark-revealjs)
   onyxia-revealjs
-  #onyxia-dark-revealjs:
-    #output-file: slides.html
 from: markdown+emoji
 bibliography: reference.bib
 suppress-bibliography: true
@@ -70,7 +58,7 @@ suppress-bibliography: true
 
 - Usual obstacles encountered in practical courses : 
     + _Students_: __[waste time]{.orange}__ installing environments rather than practicing 😵‍💫.
-    + _Teachers_: hard to manage as many installations as students 🤔
+    + _Teachers_: __[hard to manage]{.orange}__ as many installations as students 🤔
 
 . . .
 
@@ -82,7 +70,7 @@ suppress-bibliography: true
 ## Solution
 
 Making _notebooks_ available
-in a standardized environment via a web service:
+in a [__standardized environment__]{.orange} via a web service:
 
 
 + `Colab` ? ❌
